@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Clark - Free Bootstrap 4 Template by Colorlib</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Blogs</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="index.html#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="index.html#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="index.html#resume-section" class="nav-link"><span>Resume</span></a></li>
+	          <li class="nav-item"><a href="index.html#services-section" class="nav-link"><span>Services</span></a></li>
+	          <li class="nav-item"><a href="index.html#skills-section" class="nav-link"><span>Skills</span></a></li>
+	          <li class="nav-item"><a href="index.html#projects-section" class="nav-link"><span>Projects</span></a></li>
+	          <li class="nav-item"><a href="index.html#blog-section" class="nav-link"><span>My Blog</span></a></li>
+	          <li class="nav-item"><a href="index.html#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section class="hero-wrap js-fullheight" style="background-image: url('images/bg_1.jpg');" data-stellar-background-ratio="0.5">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-center">
+          <div class="col-md-12 ftco-animate pb-5 mb-3 text-center">
+            <h1 class="mb-3 bread">Hosting your Website using Linux EC2 Instance in AWS</h1>
+            <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="ion-ios-arrow-forward"></i></a></span> <span class="mr-2"><a href="blog.html">Blog <i class="ion-ios-arrow-forward"></i></a></span> <span>Hosting your Website using Linux EC2 Instance in AWS <i class="ion-ios-arrow-forward"></i></span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ftco-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 ftco-animate">
+
+            <p>
+              <img src="images/image_3.jpg" alt="" class="img-fluid">
+            </p>
+
+            <p>
+              <img src="images/image_4.jpg" alt="" class="img-fluid">
+              <p>If you are a beginner in the cloud computing the first most thing to try in cloud computing is to host your website on cloud.</p>
+
+<p>All the cloud services Provider provides various services to host your website in their cloud. For this article, I will concentrate on the AWS Cloud Service provider and its service. For Hosting your Website AWS provides services such as EC2 instance (will we concentrate on Linux ).</p>
+
+<p>Before Starting The Hosting of your Web site First, let's be ready with our Code. For website content and code, I am going to just use the Templates, which are available online for free. You Can download the template from the Freebiesbug. For this article I have used the Hook: A dark HTML landing page template.</p>
+
+<p>Download the Code of the template, extract it, and create a git repository. Now we will start the hosting.</p>
+
+<p>There are various Service you can use to host your website in AWS. We will see the common Services one by one.</p>
+
+<p>Hosting On Linux EC2 Instance :</p>
+
+<p>You can host your website on the cloud using EC2 instance by following the few steps :</p>
+
+<p>Step 1: Launch the Linux Ec2 Instance</p>
+
+<p>Go to AWS console and search For EC2 and then Select Launch Instance option in Instance.</p>
+
+<p>To launch the Ec2 Instance, there are total 6 steps</p>
+
+<p>1. Choose AMI</p>
+
+<p>2. Choose Instance Type</p>
+
+<p>3. Configure Instance</p>
+
+<p>4. Add Storage</p>
+
+<p>5. Add Tags</p>
+
+<p>6. Configure Security Group</p>
+
+<p>7. Review</p>
+
+<p>Now Choose an Amazon Machine Image (AMI) as Amazon Linux 2 AMI (HVM), SSD Volume Type (64-Bit [x86]). You can select other Linux version of Ec2 instance while i have selected the instance which is included in the free tier.</p>
+
+<p>Choose AMI</p>
+
+<p>Choose an Instance Type as t2.micro, it is sufficient to host a static website and also include in the free tier.</p>
+
+<p>Choose Instance Type</p>
+
+<p>In configure Option, select your VPC in network option. If you don’t have an VPC, create the VPC in VPC management Console and leave rest of the option a default</p>
+
+<p>Configure Instance</p>
+
+<p>by default it will allot you with 8GB EBS for snapshot leave that as it because that is sufficient for our hosting.</p>
+
+<p>Add Storage</p>
+
+<p>For tags you can add it or else it is fine for hosting setup.</p>
+
+<p>Add Tags</p>
+
+<p>In Security Group, create a security group and add SSH, HTTP and HTTPS Rules or else if you have an existing Security Group with this 3 rules you can use that. SHH — it is used to connect the Linux server remotely from your device. HTTP & HTTPS is used for web.</p>
+
+<p>Configure Security Group</p>
+
+<p>In review section, you can see all the setting of the EC2 instance once you have confirmed with setup click on Launch button. It will ask to Create security Key (.pem) or use the existing one you can create by just giving it a name and download it. Keep the security key safe with you.</p>
+
+<p>Review -1</p>
+
+<p>Review -2</p>
+
+<p>Step 2: Create Your Security Key for SSH connection to the Instance</p>
+
+<p>First Install putty.installer.msi (package file) from here.</p>
+
+<p>Open PuTTYgen on your device, click on load button and select the .pem file which you downloaded while launching instance (note: if you can’t see you .pem file in your files that is because while searching the default file format that is .ppk is selected. So change it to all files).</p>
+
+<p>Save private key.</p>
+
+<p>Step 3: Connect To Ec2 Instance</p>
+
+<p>Open PuTTY.</p>
+
+<p>Under Session Category, In Host name Enter ec2-user@ [Public IPv4 address] for Example ec2-user@129.42.56.189</p>
+
+<p>Now Select SSH category and then select Auth sub category and now Browse and select the security key in (.ppk format)</p>
+
+<p>Click on the open button and it gets connected to the Linux Command line of your instance.</p>
+
+<p>Step 4: Install LAMP SERVER (Linux, Apache, MySQL, PHP/Perl/Python)</p>
+
+<p>After Connecting to your Linux Instance Update the software of the instance by running command,</p>
+
+<p>sudo yum udate -y</p>
+
+<p>Now we will install lamp-mariadb10.2-php7.2 and php7.2 by the command</p>
+
+<p>sudo amazon-linux-extras install -y lamp-mariadb10.2-php7.2 php7.2</p>
+
+<p>To install Apache web server, MariaDB and PHP software package runt he command</p>
+
+<p>sudo yum install -y httpd mariadb-server</p>
+
+<p>Now lets start the Apache Web Server</p>
+
+<p>sudo systemctl start httpd</p>
+
+<p>this Command will start the Apache Web Server</p>
+
+<p>To check whether the Apache web server is running. Run the below command.</p>
+
+<p>sudo systemctl is-enabled httpd</p>
+
+<p>if the Apache web server is running, you would the output as “enabled” .</p>
+
+<p>To configure Apache web server to start with the start of your Linux Instance</p>
+
+<p>sudo systemctl enable httpd</p>
+
+<p>Step 5: Bring Your Code to The EC2 Linux Instance</p>
+
+<p>Since Apache Web server is installed so now, we should go to the directory where the code has to be there</p>
+
+<p>cd /var/www/html</p>
+
+<p>Check whether the html folder is empty. If not, make it empty by using commands such as.</p>
+
+<p>ls # list of all files and folder in the directory</p>
+
+<p>rm -rf [directory name] # to remove directory </p>
+
+<p>First to clone the repository we must install the git in Linux</p>
+
+<p>yum install git -y</p>
+
+<p>Clone the Repository To the var/www/html Folder</p>
+
+<p>git Clone [URL of Repository] .</p>
+
+<p>Remember . in git clone command clones the repository without Git Project Folder.</p>
+
+<p>Finally, you have Hosted your Website in the Cloud</p>
+
+<p>Just enter the Public IPv4 address in your Browser you would See your index.html in your Browser which is now in the cloud.</p>
+            <div class="tag-widget post-tag-container mb-5 mt-5">
+              <div class="tagcloud">
+                <a href="#" class="tag-cloud-link">AWS</a>
+                <a href="#" class="tag-cloud-link">Cloud</a>
+                <a href="#" class="tag-cloud-link">Tech</a>
+                <a href="#" class="tag-cloud-link">Linux</a>
+              </div>
+            </div>
+
+
+
+
+            <div class="pt-5 mt-5">
+
+              <!-- END comment-list -->
+
+              <div class="comment-form-wrap pt-5">
+                <h3 class="mb-5">Leave a comment</h3>
+                <form action="#" class="p-5 bg-dark">
+                  <div class="form-group">
+                    <label for="name">Name *</label>
+                    <input type="text" class="form-control" id="name">
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" class="form-control" id="email">
+                  </div>
+                  <div class="form-group">
+                    <label for="website">Website</label>
+                    <input type="url" class="form-control" id="website">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea name="" id="message" cols="30" rows="10" class="form-control"></textarea>
+                  </div>
+                  <div class="form-group">
+                    <input type="submit" value="Post Comment" class="btn py-3 px-4 btn-primary">
+                  </div>
+
+                </form>
+              </div>
+            </div>
+
+          </div> <!-- .col-md-8 -->
+          <div class="col-lg-4 sidebar ftco-animate">
+            <div class="sidebar-box">
+              <form action="#" class="search-form">
+                <div class="form-group">
+                  <span class="icon icon-search"></span>
+                  <input type="text" class="form-control" placeholder="Type a keyword and hit enter">
+                </div>
+              </form>
+            </div>
+
+            <div class="sidebar-box ftco-animate">
+              <h3 class="heading-sidebar">Recent Blog</h3>
+              <div class="block-21 mb-4 d-flex">
+                <a class="blog-img mr-4" style="background-image: url(images/image_1.jpg);"></a>
+                <div class="text">
+                  <h3 class="heading"><a href="#">Hosting your Website using Linux EC2 Instance in AWS</a></h3>
+                  <div class="meta">
+                    <div><a href="#"><span class="icon-calendar"></span> March 27, 2021</a></div>
+                    <!--<div><a href="#"><span class="icon-person"></span> Admin</a></div>-->
+                    <div><a href="#"><span class="icon-chat"></span> 5 min read</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="block-21 mb-4 d-flex">
+                <a class="blog-img mr-4" style="background-image: url(images/image_2.jpg);"></a>
+                <div class="text">
+                  <h3 class="heading"><a href="#">Hosting your Website using Amplify in AWS</a></h3>
+                  <div class="meta">
+                    <div><a href="#"><span class="icon-calendar"></span> March 28, 2021</a></div>
+
+                    <div><a href="#"><span class="icon-chat"></span> 3 min read</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="block-21 mb-4 d-flex">
+                <a class="blog-img mr-4" style="background-image: url(images/image_3.jpg);"></a>
+                <div class="text">
+                  <h3 class="heading"><a href="#">How Quantum Computer Can be used to calculate the key</a></h3>
+                  <div class="meta">
+                    <div><a href="#"><span class="icon-calendar"></span> March 01, 2022</a></div>
+                    <div><a href="#"><span class="icon-chat"></span> 8 min read</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="sidebar-box ftco-animate">
+              <h3 class="heading-sidebar">Tag Cloud</h3>
+              <div class="tagcloud">
+                <a href="#" class="tag-cloud-link">Cloud</a>
+                <a href="#" class="tag-cloud-link">AWS</a>
+                <a href="#" class="tag-cloud-link">Linux</a>
+                <a href="#" class="tag-cloud-link">Tech</a>
+              </div>
+            </div>
+
+            <div class="sidebar-box ftco-animate">
+              <h3 class="heading-sidebar">Summary</h3>
+              <p></p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section> <!-- .section -->
+
+
+
+        <footer class="ftco-footer ftco-section">
+          <div class="container">
+            <div class="row mb-5">
+              <div class="col-md">
+                <div class="ftco-footer-widget mb-4">
+                  <h2 class="ftco-heading-2">About</h2>
+                  <p>I am a Student from Mumbai University, pursuing my BE degree in Computer Engineering. And also a passionate learner of Cloud Computing.</p>
+
+                </div>
+              </div>
+              <div class="col-md">
+                <div class="ftco-footer-widget mb-4 ml-md-4">
+                  <h2 class="ftco-heading-2">Links</h2>
+                  <ul class="list-unstyled">
+                    <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Home</a></li>
+                    <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>About</a></li>
+                    <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Services</a></li>
+                    <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Projects</a></li>
+                    <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Contact</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md">
+                 <div class="ftco-footer-widget mb-4">
+                  <h2 class="ftco-heading-2">Notes</h2>
+                  <ul class="list-unstyled">
+                    <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Aws Solution Architect</a></li>
+                    <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Golang</a></li>
+                    <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Azure Administration</a></li>
+                    <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Gcp </a></li>
+                    <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Oracle Cloud</a></li>
+                    <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Alibaba Cloud</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md">
+                <div class="ftco-footer-widget mb-4">
+                	<h2 class="ftco-heading-2">Have a Questions?</h2>
+                	<div class="block-23 mb-3">
+    	              <ul>
+    	                <li><span class="icon icon-map-marker"></span><span class="text">Ambarnath, Mumbai, Maharashtra, India</span></li>
+    	                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+91 98237817XX</span></a></li>
+    	                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">   harshithdshetty@gmail.com</span></a></li>
+    	              </ul>
+    	            </div>
+                </div>
+              </div>
+            </div>
+            <div class="row mb-5">
+              <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+                <li class="ftco-animate"><a href="https://twitter.com/im_hshetty"><span class="icon-twitter"></span></a></li>
+                <li class="ftco-animate"><a href="https://www.facebook.com/harshithdshetty"><span class="icon-facebook"></span></a></li>
+                <li class="ftco-animate"><a href="https://www.instagram.com/_shetty.harshith/"><span class="icon-instagram"></span></a></li>
+                <li class="ftco-animate"><a href="https://www.linkedin.com/in/harshithdshetty/"><span class="icon-linkedin"></span></a></li>
+                <li class="ftco-animate"><a href="https://medium.com/@shettyharshith"><span class="icon-medium"></span></a></li>
+                <li class="ftco-animate"><a href="https://github.com/Harshith-Shetty"><span class="icon-github"></span></a></li>
+              </ul>
+            </div>
+            <div class="row", "center">
+              <div class="col-md-12 text-center">
+
+                <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+      Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+      <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+              </div>
+            </div>
+          </div>
+        </footer>
+
+
+
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+
+  <script src="js/main.js"></script>
+
+  </body>
+</html>
